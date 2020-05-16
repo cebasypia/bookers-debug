@@ -1,5 +1,7 @@
-class Controller < ApplicationController
+# frozen_string_literal: true
+
+class HomeController < ApplicationController
   def top
-  	@name = 'Ninomiya'
+    @name = 'Ninomiya'
   end
 end
