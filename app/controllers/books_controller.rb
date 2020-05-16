@@ -25,6 +25,7 @@ class BooksController < ApplicationController
   # POST /books
   # POST /books.json
   def create
+    @books = Book.all
     @book = Book.new(book_params)
     if @book.save
       redirect_to @book, notice: 'Book was successfully created.'
